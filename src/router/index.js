@@ -22,8 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    // history: createWebHistory('/advent_calendar/'),
-    history: createWebHistory(),
+    history: createWebHistory('/advent_calendar/'),
     routes,
 });
 
