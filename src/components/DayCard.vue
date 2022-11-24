@@ -29,7 +29,10 @@ export default {
         },
       isAllowedToBeDisplayed() {
           const cardDate = moment('2022-12-' + this.index, 'YYYY-MM-DD');
-          const today = moment('2022-12-04', 'YYYY-MM-DD').add(1, 'day');
+          const today = moment();
+          console.log(cardDate);
+          console.log(today);
+          console.log(today.isAfter(cardDate))
           return today.isAfter(cardDate);
       }
     },
