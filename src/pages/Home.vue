@@ -63,9 +63,7 @@ export default {
             return this.ideas.filter(idea => idea.day === day);
         },
         async fetchIdeas() {
-            const {data, error} = await supabase
-                .from('ideas')
-                .select();
+            const {data, error} = await supabase.from('ideas').select();
             if (error) {
                 console.log(error)
             } else {
