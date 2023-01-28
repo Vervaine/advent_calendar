@@ -9,8 +9,7 @@
                     <div class="grid grid-cols-3 gap-4">
                         <RadioGroupOption as="template" v-for="category in categories" :key="category.id"
                                           :value="category" v-slot="{ active, checked }">
-                            <div
-                                :class="[active ? 'ring-2 ring-offset-2 ring-indigo-500' : '', checked ? 'bg-indigo-600 border-transparent text-white hover:bg-indigo-700' : 'bg-gray-700 border-gray-900 hover:bg-gray-600', 'cursor-pointer focus:outline-none border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1']">
+                            <div :class="[active ? 'ring-2 ring-offset-2 ring-indigo-500' : '', checked ? 'bg-indigo-600 border-transparent text-white hover:bg-indigo-700' : 'bg-gray-700 border-gray-900 hover:bg-gray-600', 'cursor-pointer focus:outline-none border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1']">
                                 <RadioGroupLabel as="p" class="flex gap-2 items-center"><i
                                     :class="category.icon"></i><span>{{ category.name }}</span></RadioGroupLabel>
                             </div>

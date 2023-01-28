@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "../pages/Home.vue";
 import Odd from "../pages/Odd.vue";
 import Even from "../pages/Even.vue";
+import ListView from "../pages/ListView.vue";
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: "/even",
         name: "Even",
         component: Even,
+    },
+    {
+        path: "/list",
+        name: "ListView",
+        component: ListView,
     },
 ];
 
